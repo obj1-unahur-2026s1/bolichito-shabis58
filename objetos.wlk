@@ -1,33 +1,43 @@
-object pepita {
-  var energy = 100
-  var dinero = 1000
+object remeras {
+  method color() = rojo
   
-  method energy() = energy
-  
-  method dinero() = dinero
-  
-  method SacarDinero(valor) {
-    dinero -= valor
-  }
-  
-  method fly(minutes) {
-    energy -= minutes * 3
-  }
+  method material() = lino
 }
 
-object carlitos {
-  var energy = 100
-  var dinero = 1000
+object gramos {
   
-  method energy() = energy
+}
+
+object lino {
   
-  method dinero() = dinero
+}
+
+object fuerte {
+  method rojo() = true
   
-  method SacarDinero(valor) {
-    dinero -= valor
-  }
+  method verde() = true
   
-  method fly(minutes) {
-    energy -= minutes * 3
-  }
+  method pardo() = false
+  
+  method celeste() = false
+}
+
+object lino {
+  method brilla() = false
+}
+
+object verde {
+  method fuerte() = true
+}
+
+object rojo {
+  method fuerte() = true
+}
+
+object pardo {
+  method fuerte() = false
+}
+
+object celeste {
+  method fuerte() = false
 }
